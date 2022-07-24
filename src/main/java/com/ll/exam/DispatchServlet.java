@@ -12,6 +12,6 @@ import java.io.IOException;
 public class DispatchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().append("work");
+        Rq rq = new Rq(req, resp);
     }
 }
