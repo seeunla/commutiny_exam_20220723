@@ -20,7 +20,7 @@ public class DispatchServlet extends HttpServlet {
             case "GET":
                 switch (rq.getPath()) {
                     case "/usr/article/list/free":
-                        articleController.showList(rq);
+                        articleController.showList(rq); //showList는 post를 달라
                         break;
                     case "/usr/article/write/free":
                         articleController.showWrite(rq);
@@ -33,7 +33,7 @@ public class DispatchServlet extends HttpServlet {
             case "POST":
                 switch (rq.getPath()) {
                     case "/usr/article/write/free":
-                        articleController.doWrite(rq);
+                        articleController.doWrite(rq); // do write는 처리하다 받아들이다
                         break;
                 }
                 break;
