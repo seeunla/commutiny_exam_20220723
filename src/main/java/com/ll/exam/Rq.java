@@ -80,7 +80,7 @@ public class Rq {
     public String getActionPath() {
         String[] bits= req.getRequestURI().split("/");
 
-        return "/%s/%s/%s".formatted(bits[0], bits[1], bits[2]);
+        return "/%s/%s/%s".formatted(bits[1], bits[2], bits[3]);
     }
 
     public String getMethod() {
