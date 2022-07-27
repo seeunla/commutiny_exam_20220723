@@ -12,6 +12,8 @@ public class ArticleRepository {
     static {
         datum = new ArrayList<>();
         lastId=0;
+
+
     }
 
     public long write(String title, String body) {
